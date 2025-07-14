@@ -1,3 +1,6 @@
+print("Starting main.py")
+
+
 import logging
 from spapi_mock import get_mock_orders
 
