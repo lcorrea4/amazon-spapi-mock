@@ -1,3 +1,6 @@
+print("Loading spapi_mock module")
+
+
 from datetime import datetime, timedelta
 
 def get_mock_orders():
