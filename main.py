@@ -1,7 +1,6 @@
 import logging
 from spapi_mock import get_mock_orders
 
-# Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def display_orders(orders):
@@ -14,6 +13,7 @@ def display_orders(orders):
         print(f"📧 Buyer Email: {order['BuyerEmail']}")
 
 def main():
+    print("✅ Main function is running.")  # This print confirms the script runs
     logging.info("Fetching mock Amazon orders...")
     orders = get_mock_orders()
     display_orders(orders)
@@ -21,4 +21,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
